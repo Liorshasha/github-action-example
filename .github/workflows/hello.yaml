@@ -16,4 +16,5 @@ jobs:
     needs: hello
 
     steps:
-      - run: echo "building app"
+    -name: do build
+     run: echo "building app"
