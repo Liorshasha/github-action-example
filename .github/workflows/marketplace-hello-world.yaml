@@ -17,4 +17,4 @@ jobs:
           who-to-greet: "GitHub Actions Student"
           
       - name: Print Production Environment Variable
-        run:  echo "The current environment is:"
+        run:  echo "The current environment is:${{ vars.MY_ENVIRONMENT }}"
