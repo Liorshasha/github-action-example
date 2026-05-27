@@ -8,7 +8,6 @@ jobs:
   hello-world:
     runs-on: ubuntu-latest
     environment: production
-    
 
     steps:
       - name: Run Hello World JS Action
@@ -17,9 +16,9 @@ jobs:
           who-to-greet: "GitHub Actions Student"
           
       - name: Print Production Environment Variable
-        run:  echo "The current environment is:${{ vars.MY_ENVIRONMENT }}"
+        run:  echo "The current environment is: ${{ vars.MY_ENVIRONMENT }}"
 
-        scan:
+  scan:
     runs-on: ubuntu-latest
 
     steps:
@@ -38,5 +37,3 @@ jobs:
           format: 'table'
           exit-code: '1'
           severity: 'HIGH,CRITICAL'
-
-        
