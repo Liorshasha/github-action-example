@@ -13,3 +13,7 @@ jobs:
         uses: actions/hello-world-javascript-action@main
         with:
           who-to-greet: "GitHub Actions Student"
+
+    steps:
+      - name: Print Production Environment Variable
+        run:  echo "The current environment is: ${{ vars.MY_ENVIRONMENT }}"
